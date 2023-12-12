@@ -1,7 +1,7 @@
 import './Library.scss'
 import React from "react";
 import {Routes,Route,} from "react-router-dom";
-import {motion} from "framer-motion";
+
 
 import Home from './Home';
 import Detecteur from './pages/Detecteur';

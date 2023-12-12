@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Alexoou/github.io/truc-detector",
+  "homepage": "https://alexoou/github.io/truc-detector",
   "name": "noel-app",
   "private": true,
   "version": "0.0.0",
@@ -9,6 +9,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy" : "gh-pages -d build"
   },
   "dependencies": {
