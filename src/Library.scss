@@ -1,0 +1,341 @@
+:root{
+    --redColor: #E55760;
+    --beigeColor: #FFE4D0;
+    --blackColor: #211C19;
+    --ombreColor: #ad9d90;
+    --texteColor: #6C5645;
+
+    // sizing
+    --xs-sizing: 8px;
+    --s-sizing: 16px;
+    --m-sizing: 24px;
+    --l-sizing: 32px;
+    --xl-sizing: 64px;
+    --xxl-sizing: 120px;
+
+    --paddingPage: 6vw;
+    --spacer: 10vw;
+}
+
+// fonts
+@font-face {
+    font-family: "Geist";
+    src: url(..//src/assets/fonts/GeistVariableVF.ttf);
+}
+
+@font-face {
+    font-family: "Brown-Sugar";
+    src: url(..//src/assets/fonts/Brown-Sugar.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Geist";
+    color: var(--blackColor);
+    
+}
+
+.fond {
+    position: absolute;
+    background-color: var(--beigeColor);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+.code {
+    position: absolute;
+    top: 15%;
+    left: 21%;
+    font-family: "Brown-Sugar";
+    text-align: center;
+    color: var(--beigeColor);
+    font-size: 10vw;
+    z-index: 1;
+  
+
+}
+
+.detect-titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    font-family: "Brown-Sugar";
+    text-align: center;
+    color: var(--redColor);
+    font-size: 8vw;
+    z-index: 1;
+  
+
+}
+
+p{
+    color: var(--blackColor);
+    position: absolute;
+    display: block;
+    bottom: 5vh;
+    left: 28%;
+    z-index: 1;
+    font-size: 2vw;
+    
+}
+
+.cercle{
+    position: absolute;
+    display: block;
+    width: 160vw;
+    height: 100vh;
+    top: -15vh;
+    left: -30vw;
+    border-radius: 500px;
+    background-color: var(--redColor);
+}
+
+.cercle-truc{
+    position: absolute;
+    display: block;
+    width: 160vw;
+    height: 100vh;
+    top: -80vh;
+    left: -30vw;
+    border-radius: 500px;
+    background-color: var(--redColor);
+    z-index: 1;
+
+}
+
+.saisi {
+    border: none;
+    outline: none;
+    position: absolute;
+    display: block;
+    width: 50vw;
+    height: 5vh;
+    top: 28.5%;
+    left: 24%;
+    border-radius: 45px;
+    padding: 2px;
+    font-size: 3vh;
+    text-align: center;
+    font-family: "Geist";
+    color: var(--texteColor);
+    background-color: var(--beigeColor);
+}
+
+
+.saisi-ombre{
+    position: absolute;
+    display: block;
+    width: 50vw;
+    height: 5vh;
+    top: 28%;
+    left: 24%;
+    border-radius: 45px;
+    background-color: var(--ombreColor);
+}
+
+.bouton{
+    border: none;
+    position: absolute;
+    display: block;
+    width: 13vw;
+    height: 5vh;
+    top: 35%;
+    left: 43%;
+    border-radius: 45px;
+    background-color: var(--beigeColor);
+    font-size: 30px;
+    text-align: center;
+    color: var(--texteColor);
+
+}
+
+.bouton-ombre{
+    position: absolute;
+    display: block;
+    width: 13vw;
+    height: 5vh;
+    top: 35.4vh;
+    left: 43%;
+    border-radius: 45px;
+    background-color: var(--ombreColor);
+
+}
+
+
+
+@media (min-width:465px) {
+    .saisi{
+        top: 36%;  
+    }
+
+    .saisi-ombre{
+        top: 35.5%
+    }
+    
+    .bouton{
+        top: 48%;
+    }
+
+    .bouton-ombre{
+        top: 48.5%;
+    }
+
+
+}
+
+@media (min-width:785px) {
+
+    .detect-titre{
+        font-size: 8vw;
+    }
+
+    p{
+        font-size: 1.5vw;
+        left: 32%;
+    }
+
+    .saisi{
+        top: 45%;  
+    }
+
+    .saisi-ombre{
+        top: 44.5%
+    }
+    
+    .bouton{
+        top: 60%;
+    }
+
+    .bouton-ombre{
+        top: 60.5%;
+    }
+
+    .cercle{
+        position: absolute;
+        display: block;
+        width: 160vw;
+        height: 500vh;
+        top: -410vh;
+        left: -30.5vw;
+        border-radius: 1600px;
+        background-color: var(--redColor);
+    }
+
+    .cercle-truc{
+        width: 160vw;
+        height: 130vh;
+        top: -110vh;
+        left: -30vw;
+        border-radius: 16000px;
+        
+    
+    }
+    .detect-titre{
+        font-size: 6vw;
+        padding-top: 7%;
+        padding-left: 10%;
+    }
+
+
+}
+
+@media (min-width:1115px) {
+
+    .code{
+            font-size: 7vw;
+            left: 29%;
+            top: 20%;
+        }
+
+    .detect-titre{
+            font-size: 6vw;
+            padding-top: 5%;
+            padding-left: 10%;
+        }
+    
+        p{
+            font-size: 1vw;
+            left: 38%;
+        }
+    .saisi{
+        top: 55%;  
+    }
+
+    .saisi-ombre{
+        top: 54.5%
+    }
+    
+    .bouton{
+        top: 70%;
+    }
+
+    .bouton-ombre{
+        top: 70.5%;
+    }
+
+    .cercle-truc{
+        width: 160vw;
+        height: 190vh;
+        top: -165vh;
+        left: -30vw;
+        border-radius: 16000px;
+        
+    
+    }
+    
+
+
+}
+
+@media (min-width:1500px) {
+
+    .detect-titre{
+        font-size: 4vw;
+        padding-top: 3%;
+        padding-left: 20%;
+    }
+
+    .saisi{
+        top: 65%;  
+    }
+
+    .saisi-ombre{
+        top: 64.5%
+    }
+    
+    .bouton{
+        top: 75%;
+    }
+
+    .bouton-ombre{
+        top: 75.5%;
+    }
+
+    p{
+        font-size: 0.5vw;
+        top: 95%;
+        left: 44%;
+    }
+
+    .cercle-truc{
+        width: 160vw;
+        height: 270vh;
+        top: -250vh;
+        left: -30vw;
+        border-radius: 16000px;
+        
+    
+    }
+    
+
+
+}
