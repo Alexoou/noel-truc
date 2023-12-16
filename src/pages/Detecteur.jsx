@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import Truc1 from './Truc_1';
-import Truc2 from './Truc_2';
 
 
 const StyledPage = styled.div`
     width: 100vw;
     height: 100vh;
-    background-color: var(--beigeColor);  // Notez la correction ici
+    background-color: var(--beigeColor);
 
     h1 {
         position: absolute;
@@ -55,7 +53,7 @@ function Detecteur() {
 
     return (
         <StyledPage>
-            <h1 className='detect-titre'>DÉTECTEUR DE TRUCS</h1>
+            <h1 className='detect-titre-gros'>DÉTECTEUR DE TRUCS</h1>
             <h2 className='truc-1' onClick={handleTruc1Click}>Truc 1</h2>
             <h2 className='truc-2' onClick={handleTruc2Click}>Truc 2</h2>
             <div className="cercle-truc"></div>

@@ -10,11 +10,11 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.517",
+    "@splinetool/runtime": "^0.9.523",
     "@studio-freight/react-lenis": "^0.0.36",
     "framer-motion": "^10.6.8",
     "localforage": "^1.10.0",

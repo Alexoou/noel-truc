@@ -16,8 +16,9 @@ const StyledPage = styled.div`
 function Truc2() {
     return (
         <StyledPage>
-            <h1 className='detect-titre'>Truc 1</h1>
-            <Spline scene="https://prod.spline.design/IwI3DSXuwe7nEbVW/scene.splinecode" />
+            <h1 className='detect-titre'>Truc 2</h1>
+            <Spline className='3d' scene="https://prod.spline.design/IwI3DSXuwe7nEbVW/scene.splinecode" />
+            <div className='fond'></div>
         </StyledPage>
     );
 }
